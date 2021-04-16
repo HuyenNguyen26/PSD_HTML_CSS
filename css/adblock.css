@@ -4,54 +4,48 @@
     background-color: #494b58;
 }
 
-.adblock__content {
+.adblock-content {
     position: relative;
     width: 100%;
-    /* height: 800px; */
     text-align: center;
     align-items: center;
     box-sizing: border-box;
     padding: 100px 0;
 }
 
-.adblock__content > h1 {
+.adblock-content > h1 {
     font-size: 100px;
     text-transform: uppercase;
     margin: 40px 0;
-    font-weight: 300;
-
+    font-weight: 200;
     color: #ececed;
 }
 
-.adblock__content > p {
-    font-size: 24px;
+.adblock-content > p {
+    font-size: 20px;
     font-weight: 300;
-    margin: 0 120px;
-
-    color: #ffff;
+    margin: 0 30px 30px;
+    color: #fff;
+    text-align: left;
 }
 
-.adblock__content__btn {
-    position: relative;
-    width: 220px;
-    height: 45px;
-    line-height: 40px;
-    border: 3px solid #4ec3c9;
-    border-radius: 25px;
-    font-size: 19px;
+.adblock-content-btn {
+    background-color: #494b58;
+	border:2px solid #fff;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 36px;
     text-transform: uppercase;
-    cursor: pointer;
-    left: 45%;
-    margin-left: -45px;
-    margin-top: 60px;
-
-    color: #4ec3c9;
 }
 
-.adblock__content__btn:hover {
-    color: #ffff;
-    background-color: #4ec3c9;
-
+.adblock-content-btn:hover {
+    color: #4ec3c9;
+	border: 2px solid #4ec3c9;
     transition: 0.4s ease-in-out;
 }
 

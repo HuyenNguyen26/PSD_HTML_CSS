@@ -4,15 +4,39 @@
     box-sizing: border-box;
 }
 
+.scroll-top-button.visible {
+    opacity: 0.5;
+    visibility: visible;
+}
+.scroll-top-button {
+    position: fixed;
+    right: 40px;
+    bottom: 35px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 0;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.scroll-top-button:before {
+    content: '\e633';
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #06060f;
+    color: #99a9b5;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-
-.nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
- }
 
 @media screen and (max-width: 1200px) {
     * {
