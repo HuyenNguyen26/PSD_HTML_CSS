@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 1920px;
+}
+
+/* ---------------header main-menu--------------- */
+.header {
+    background-color: #2c2e3d;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+.container.main-menu {
+    padding-top: 35px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.container.main-menu .logo {
+    font-family: Montserrat;
+}
+.container.main-menu .logo img {
+    vertical-align: middle;
+    transform: translateY(-7px);
+}
+.container.main-menu .logo span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.container .top-nav .nav {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+.container .top-nav .nav-header,
+.container .top-nav .nav-right-header {
+    display: flex;
+    justify-content: space-between;
+}
+.container .top-nav .nav-header a {
+    line-height: 30px;
+    color: #83909d;
+    margin: 0 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.container .top-nav .nav-right-header li {
+    line-height: 30px;
+    margin: 0 20px;
+}
+.container .nav-right-header li:last-child{
+    margin-right: 0;
+}
+
+.container.main-menu .nav-header a:hover {
+    color: #00bcd4;
+    cursor: pointer;
+}
+.main-menu .nav-header .active {
+    border: 2px solid #ffffff;
+}
+.main-menu .nav-header .active a{
+    font-weight: 600;
+    color: #ffffff;
+}
+.main-menu .top-nav .icon {
+    height: 18px;
+}
+.top-nav a.icon {
+    display: none;
+}
+
+/* ----------------slider-dark---------------- */
+.slider-dark {
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5em;
+}
+.slider-dark img{
+    position: relative;
+    margin-top: 120px;
+}
+.slider-dark .title-slider{
+    font-size: 80px;
+    line-height: 50px;
+    margin: 110px auto 70px;
+    text-transform: uppercase;
+}
+.slider-dark .title-slider h1 {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+.slider-dark .title-slider span {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.slider-dark p {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 37px;
+}
+.slider-dark .buttons {
+    margin: 80px 0 60px;
+    justify-content: center;
+}
+.slider-dark .btn {
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: #2c2e3d;
+    margin-right: 20px;
+}
+.slider-dark .btn:hover{
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
+    background-color: #2c2e3d;
+}
+.slider-dark .round li {
+    position: relative;
+    display: inline;
+    color: #ffffff;
+    margin: 23px;
+}
+.slider-dark .round-pager .fa-circle {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px white;
+    padding: 0.5em 0.5em;
+}
+.slider-dark .round-pager .fa-circle{
+    color: #00bcd4;
+    border: 1px solid #ffffff;
+    border-radius: 50%
+}
+
+/* ---------arrow---------- */
+.arrow .fa {
+    color: #ffffff;
+    position: relative;
+    max-width: 1920px;
+}
+.fa-arrow-left {
+    float: left;
+    background-color: #212331;
+    padding: 25px;
+    width: 50px;
+    transform: translateX(0px) translateY(-500px);
+    
+}
+.fa-arrow-right {
+    float: right;
+    background-color: #212331;
+    padding: 25px;
+    width: 50px;
+    transform: translateX(0px) translateY(-500px);
+}
+/* arrow-left*/
+.left{
+    background: #fff;
+    height: 3px;
+    width: 15px;
+    margin-left: -0.7em;
+    position: relative;
+    cursor: pointer;
+}
+.left:before{
+    left: -3px;
+    bottom: -4px;
+    transform: rotate(45deg);
+}
+.left:after{
+    left: -3px;
+    top: -4px;
+    transform: rotate(135deg);
+}
+
+.left:before, .left:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: 3px;
+    width: 10px;
+}
+/* arrow-right*/
+.right{
+    background: #fff;
+    height: 3px;
+    width: 15px;
+    margin-left: -0.7em;
+    position: relative;
+    cursor: pointer;
+}
+.right:before{
+    right: -3px;
+    bottom: -4px;
+    transform: rotate(-45deg);
+}
+.right:after{
+    right: -3px;
+    top: -4px;
+    transform: rotate(-135deg);
+}
+
+.right:before, .right:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    height: 3px;
+    width: 10px;
+}
+.fa-arrow-left:hover,
+.fa-arrow-right:hover {
+    background-color: #00bcd4;
+}
+
+/* ------------- title-light ----------- */
+.container.title-light {
+    margin: 110px auto;
+}
+.container.title-light h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 55px;
+    font-family: "Montserrat";
+}
+.container.title-light span {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.container.title-light p {
+    font-size: 16px;
+    color: #5f727f;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: "Montserrat";
+}

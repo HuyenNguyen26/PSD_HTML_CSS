@@ -3,487 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THEGEM</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/introduce.css">
-    <link rel="stylesheet" href="css/service-pack.css">
-    
-    <link rel="stylesheet" href="css/adblock.css">
-    <link rel="stylesheet" href="css/information.css">
-    <link rel="stylesheet" href="css/copyright.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header id="page"class="header">
-        <a href="#page" class="scroll-top-button visible"></a>
-        <!-- TOP-NAV  -->
-        <nav class="top-nav">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="logo">
-                        <a href="#" class="top-nav-logo">
-                            <img src="images/logo.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="menu">
-                        <ul class="top-nav-menu">
-                            <li><a href="#">home</a></li>
-                            <li class="active"><a href="#">pages</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">portfolios</a></li>
-                            <li><a href="#">shop</a></li>
-                            <li><a href="#">features</a></li>
-                            <li><a href="#">elements</a></li>
-                        </ul>
-                    </div>
-                    <div class="icons">
-                        <ul class="top-nav-icons">
-                            <li>
-                                <a href="#"><img src="images/Language.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/search.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/cart.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img id="top-nav-total-items" src="images/Rectangle 4.png" alt="">
-                                    <p>2</p>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
+    <header class="header">
+        <div class="container main-menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/Vector Smart Object.png" alt="">
+                    <span>THEGEM</span>
+                </a>
             </div>
-        </nav>
+            <div class="top-nav" >
+                <div class="nav">
+                    <ul class="nav-header">
+                        <li><a href="#">HOME</a></li>
+                        <li class="active"><a href="#">PAGES</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">PORTFOLIOS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">ELEMENTS</a></li>
+                    </ul>
+                    <ul class="nav-right-header">
+                        <li><a href="#"><img src="./images/Language.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/search.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/cart.png" alt="">
+                                <img src="./images/Rectangle 4.png" alt="">
+                            </a></li>
+                    </ul>
+                </div>
 
-        <!-- HERO -->
-        <section class="slide-show">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="slide-show-content">
-                            <img src="images/menu.png" alt="">
-                            <div class="slide-show-title">
-                                <h1>
-                                    <p>Pricing</p>
-                                    <p>TABLES</p>
-                                </h1>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                            <div class="slide-show-btn ">
-                                <button class="btn">purchase now</button>
-                            </div>
-                            <div class="slide-show-btn ">
-                                <button class="btn">more details</button>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="slide-show-button">
-                            <span id="btn-prev"><img src="images/muiten.PNG" alt=""></span>
-                            <span id="btn-next"><img src="images/mtphai.PNG" alt=""></span>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
+
+        </div>
+        <div class="container">
+            <div class="slider-dark">
+                <img src="./images/menu.png" alt="" class="icon-slider">
+                <div class="title-slider">
+                    <h1><span>Pricing</span> Tables</h1>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                </p>
+                <div class="buttons">
+                    <a href="#" class="btn ">PURCHASE NOW</a>
+                    <a href="#" class="btn ">MORE DETAILS</a><br>
+                </div>
+
+                <div class="round">
+                    <li class="round-pager active"><i class="fa fa-circle" aria-hidden="true"></i></li>
+                    <li class="round-pager"><i class="fa fa-circle" aria-hidden="true"></i></li>
+                    <li class="round-pager"><i class="fa fa-circle" aria-hidden="true"></i></li>
+                </div>
+
+            </div>
+        </div>
+        <div class="arrow">
+            <div class="fa fa-arrow-left">
+                <a href="#">
+                    <div class="left"></div>
+                </a>
+            </div>
+            <div class="fa fa-arrow-right">
+                <a href="#">
+                    <div class="right"></div>
+                </a>
+            </div>
     </header>
 
-    <!-- MAIN -->
-    <main class="main-section">
-
-        <!-- INTRODUCE -->
-        <section class="introduce">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="introduce-title">
-                            <span class="light">Lorem&nbsp;</span>
-                            <span >Ipsum</span>
-                        </div>
-                        <p class="introduce-content">
-                            Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud 
-			                exercitation ullamco laboris nisi ut aliquip ex ra commodo consequat. Duis aute irure dolor in reperhenderit in voluptate velit esse cillum dolora eu fugiat nulla pariatur.
-                            Excepteur sint occaecat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Set ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                            dolorem ipsum quia dolor sit amet, consectetur, adipici velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam querat voluptatem.
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICE-PACK 1 -->
-        <section class="service-pack1">
-            <div class="container">
-                <div class="grid-container">
-                    <div>
-                        <div class="service-pack1-content service-pack1-content-biginner">
-                            <p>biginner</p>
-                            <p id="service-pack1-description">The best price/quantity plan *</p>
-                            <div class="service-pack1-price" id="service-pack1-biginner">
-                                <p>$10</p>
-                                <p>Per Month</p>
-                            </div>
-                            <ul>
-                                <li class="service-pack1-subtitle">
-                                    <p>Subtitle Goes Here</p>
-                                    <p>Subtitle second line goes here</p>
-                                </li>
-                                <li>Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li class="pricing-row-strike">Crush revenue traction</li>
-                                <li class="pricing-row-strike">User base minimum</li>
-                                <li class="pricing-row-strike">Lorem ipsum dolor</li>
-                            </ul>
-                            <div class="service-pack1-btn">
-                                <div class="service-pack1-btn-child">
-                                    <i class="fas fa-caret-right"></i>
-                                    <p>order</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-pack1-content service-pack1-content-advanced">
-                            <p>advanced</p>
-                            <p id="service-pack1-description">The best price/quantity plan *</p>
-                            <div class="service-pack1-price" id="service-pack1-advanced">
-                                <p>$45</p>
-                                <p>Per Month</p>
-                            </div>
-                            <ul>
-                                <li class="service-pack1-subtitle">
-                                    <p>Subtitle Goes Here</p>
-                                    <p>Subtitle second line goes here</p>
-                                </li>
-                                <li> Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li class="pricing-row-strike">Crush revenue traction</li>
-                                <li class="pricing-row-strike">User base minimum viable</li>
-                                <li class="pricing-row-strike">Lorem ipsum dolor</li>
-                            </ul>
-                            <div class="service-pack1-btn">
-                                <div class="service-pack1-btn-child">
-                                    <img src="#" alt="">
-                                    <p>order</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-pack1-content service-pack1-content-master">
-                            <p>master</p>
-                            <p id="service-pack1-description">The best price/quantity plan *</p>
-                            <div class="service-pack1-new">new</div>
-                            <div class="service-pack1-price" id="service-pack1-master">
-                                <p>$249</p>
-                                <p>Per Month</p>
-                            </div>
-                            <ul>
-                                <li class="service-pack1-subtitle">
-                                    <p>Subtitle Goes Here</p>
-                                    <p>Subtitle second line goes here</p>
-                                </li>
-                                <li> Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li class="pricing-row-strike">Crush revenue traction</li>
-                                <li class="pricing-row-strike">User base minimum viable</li>
-                                <li class="pricing-row-strike">Lorem ipsum dolor</li>
-                            </ul>
-                            <div class="service-pack1-btn">
-                                <div class="service-pack1-btn-child">
-                                    <i class="fas fa-caret-right"></i>
-                                    <p>order</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                    <div>
-                        <div class="service-pack1-content service-pack1-content-insane">
-                            <p>insane</p>
-                            <p id="service-pack1-description">The best price/quantity plan *</p>
-                            <div class="service-pack1-price" id="service-pack1-insane">
-                                <p>$1399</p>
-                                <p>Per Month</p>
-                            </div>
-                            <ul>
-                                <li class="service-pack1-subtitle">
-                                    <p>Subtitle Goes Here</p>
-                                    <p>Subtitle second line goes here</p>
-                                </li>
-                                <li> Drop out ramen hustle</li>
-                                <li>Coworking viral landing</li>
-                                <li class="pricing-row-strike">Crush revenue traction</li>
-                                <li class="pricing-row-strike">User base minimum viable</li>
-                                <li class="pricing-row-strike">Lorem ipsum dolor</li>
-                            </ul>
-                            <div class="service-pack1-btn">
-                                <div class="service-pack1-btn-child">
-                                    <i class="fas fa-caret-right"></i>
-                                    <p>order</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <!---->
-        <!-- AD-BLOCK -->
-        <section class="adblock">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="adblock-content">
-                            <img src="images/knight.png" alt="">
-                            <h1>ad block</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                            </p>
-                            <div class="adblock-content-btn">purchase now</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="middle">
+        <div class="container title-light">
+            <h2><span>Lorem</span> IPSUM</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+            </p>
+        </div>
     </main>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <!-- INFORMATION -->
-        <section class="information">
-            <div class="container">
-                <div class="grid-container-information">
-                    <div>
-                        <div class="information-content information-content-logo">
-                            <a href="#"><img src="images/logo2.png" alt="">
-                                <div class="information-logo">
-                                    <p>the</p>
-                                    <p>gem</p>
-                                </div>
-                            </a>
-                            <p>
-                                Lorem Ipsum.Prion gravida nibh vel velit auctor aliquet.Aenean sollicitu-din, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="information-content-recent-posts information-content ">
-                            <p>
-                                Recent posts
-                                <img class="cheos"src="images/cheo.PNG" alt="">
-                            </p>
-                            <div class="row">
-                                <div class="information-box">
-                                    <img src="images/flick1.png" alt="">
-                                    <p>Proin gravida nibh vel velit auctor aliquet aenean...</p>
-                                    <div class="information-date-cmt">
-                                        <p>27 Dec 2015</p>
-                                        <img class="icons-comment" src="images/comments.png" alt="">
-                                        <p>0</p>
-                                    </div>
-                                </div>
-                                <div class="information-box">
-                                    <img src="images/flick1.png" alt="">
-                                    <p>Proin gravida nibh vel velit auctor aliquet aenean...</p>
-                                    <div class="information-date-cmt">
-                                        <p>27 Dec 2015</p>
-                                        <img class="icons-comment" src="images/comments.png" alt="">
-                                        <p>14</p>
-                                    </div>
-                                </div>
-                                <div class="information-box">
-                                    <img src="images/flick1.png" alt="">
-                                    <p>Proin gravida nibh vel velit auctor aliquet aenean...</p>
-                                    <div class="information-date-cmt">
-                                        <p>27 Dec 2015</p>
-                                        <img class="icons-comment" src="images/comments.png" alt="">
-                                        <p>2</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="information-content-email-us information-content ">
-                            <p>
-                                email us
-                                <img class="cheos"src="images/cheo.PNG" alt="">
-                            </p>
-                            <input class="email-us-name" type="text" placeholder=" Your name">
-                            <input type="email" placeholder=" Your email address">
-                            <input type="text" placeholder=" Your message">
-                            <div class="information-email-us-btn">Send Message</div>
-                        </div>
-                    </div>  
-                    <div>
-                        <div class="information-content-flick-feed information-content ">
-                            <p>
-                                Flickr feed
-                                <img class="cheos"src="images/cheo.PNG" alt="">
-                            </p>
-                            <div class="row">
-                                <div class="col-feed"><img src="images/flick1.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick2.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick3.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick4.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick5.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick6.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick7.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick8.png" alt=""></div>
-                                <div class="col-feed"><img src="images/flick9.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="information-content-contact information-content ">
-                            <p>
-                                contact
-                                <img class="cheos"src="images/cheo.PNG" alt="">
-                            </p>
-                            <div class="information-address">
-                                <img src="images/map.PNG" alt="">
-                                <p>Address:</p>
-                                <p>908 New Hampshire Avenue Northwest #100, Washington, DC</p>
-                                <p>20037, United States</p>
-
-                            </div>
-                            <ul>
-                                <li>
-                                    <img src="" alt="">
-                                    <p>Phone: +1 916-875-2235</p>
-                                </li>
-                                <li>
-                                    <img src="" alt="">
-                                    <p> Fax: +1 916-875-2235</p>
-
-                                </li>
-                                <li>
-                                    <img src="" alt=""> Email:
-                                    <p class="p-contact">info@domain.ltd</p>
-                                </li>
-                                <li>
-                                    <img src="" alt=""> Website:
-                                    <p class="p-contact">www.codex-themes.com</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class=" information-content-useful-links information-content">
-                            <p>
-                                useful links
-                                <img class="cheos"src="images/cheo.PNG" alt="">
-                            </p>
-                            <ul>
-                                <li>General Information For Users</li>
-                                <li>Interactive Fairy Tales</li>
-                                <li>Official Storybook Maker Website</li>
-                                <li>Everyday Mathematics Links</li>
-                                <li>Basic Knowledge and Experience</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="information-content-project-client information-content">
-                            <p>
-                                projects / clients ?
-                                <img class="cheos"src="images/cheo.PNG" alt="">
-                            </p>
-                            <div class="row">
-                                <div class="col-feed "><img src="images/flick1.png" alt=""></div>
-                                <div class="col-feed "><img src="images/flick2.png" alt=""></div>
-                                <div class="col-feed "><img src="images/flick3.png" alt=""></div>
-                                <div class="col-feed "><img src="images/flick4.png" alt=""></div>
-                                <div class="col-feed "><img src="images/flick5.png" alt=""></div>
-                                <div class="col-feed "><img src="images/flick6.png" alt=""></div>
-                                <div class="col-feed">
-                                    <div class="information-content-project-client-slide-show">
-                                        <ul>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="information-content-newsletter information-content">
-                            <p>
-                                newsletter
-                                <img class="cheos"src="images/cheo.PNG" alt="">
-                            </p>
-                            <p class="p-news">Subscribe to our MailChimp newsletter and stay up to date with all events coming straight
-                                in your mailbox:</p>
-                            <input type="email" placeholder="Your email address">
-                            <div class="information-newsletter-btn">
-                                <img src="images/chev_ri.PNG" alt="">
-                            </div>
-                            <p>* Personal information will be encrypted</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- COPYRIGHT -->
-        <section class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="copyright-title">
-                        <span>@ Copyright2015</span>
-                        <p>CodexThemes</p>
-                    </div>
-                    <div class="copy-menu">
-                        <ul class="copyright-menu">
-                            <li>Support</li>
-                            <li>Contact Us</li>
-                            <li>Disclaimer</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
-                    <div class="copyright-icons">
-                        <ul class="copyright-social-network">
-                            <li><img src="images/twitter.png" alt=""></li>
-                            <li><img src="images/fb.png" alt=""></li>
-                            <li><img src="images/linkin.PNG" alt=""></li>
-                            <li><img src="images/instagram.PNG" alt=""></li>
-                            <li><img src="images/youtube.PNG" alt=""></li>
-                            <li><img src="images/gg+.PNG" alt=""></li>
-                            <li><img src="images/printp.PNG" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <footer class="footer">
     </footer>
 </body>
 
