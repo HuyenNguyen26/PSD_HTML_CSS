@@ -157,17 +157,8 @@
     .container.main-menu {
         width: 100%;
     }
-    #table1 .columns,
-    #table2 .columns,
-    #table5 .columns,
-    #table6 .columns{
+    #table1 .columns{
         width: 293px;
-    }
-    #table3 .columns,
-    #table4 .columns,
-    #table7 .columns,
-    #table8 .columns{
-        width: 261px;
     }
 
     .pricing-table,
