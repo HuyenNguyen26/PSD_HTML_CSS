@@ -11,7 +11,7 @@
         padding: 30px 9%;
         width: 100%;
     }
-    .nav-header1,
+    .nav-header li,
     .right-header {
         float: none;
         display: none;
@@ -50,8 +50,8 @@
       padding: 30px 9%;
       width: 100%;
     }
-    .nav-header1,
-    .right-header {
+    .nav-header li,
+    .nav-right-header li{
       float: none;
       display: none;
     }
@@ -94,7 +94,7 @@
     .top-nav {
         width: 100%;
     }
-    .nav {
+    .top-nav .nav {
         flex-direction: column;
     }
     .responsive .nav {
@@ -151,7 +151,7 @@
     .top-nav {
         width: 100%;
     }
-    .nav {
+    .top-nav .nav {
         flex-direction: column;
     }
     .responsive .nav {
@@ -542,11 +542,6 @@
         grid-template-columns: auto !important;
         grid-gap: 60px;
     }
-    .fa-arrow-left {
-        display: none;
-    }
-    .fa-arrow-right {
-        display: none;
-    }
+    
 
 }
