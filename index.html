@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/responsive.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header"> 
         <div class="container main-menu">
             <div class="row">
                 <div class="logo">
@@ -22,16 +23,19 @@
                         <span class="name-logo">THEGEM</span>
                     </a>
                 </div>
-                <div class="top-nav" >
+                <div class="top-nav" id="top-nav-header">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img class="icon-list" src="./images/list.PNG" alt="">
+                    </a>
                     <div class="nav">
                         <ul class="nav-header">
-                            <li><a href="#" class="nav-header1">HOME</a></li>
-                            <li class="active"><a href="#" class="nav-header1">PAGES</a></li>
-                            <li><a href="#" class="nav-header1">BLOG</a></li>
-                            <li><a href="#" class="nav-header1">PORTFOLIOS</a></li>
-                            <li><a href="#" class="nav-header1">SHOP</a></li>
-                            <li><a href="#" class="nav-header1">FEATURES</a></li>
-                            <li><a href="#" class="nav-header1">ELEMENTS</a></li>
+                            <li class="left-header"><a href="#" class="nav-header1">HOME</a></li>
+                            <li class="left-header active"><a href="#" class="nav-header1">PAGES</a></li>
+                            <li class="left-header"><a href="#" class="nav-header1">BLOG</a></li>
+                            <li class="left-header"><a href="#" class="nav-header1">PORTFOLIOS</a></li>
+                            <li class="left-header"><a href="#" class="nav-header1">SHOP</a></li>
+                            <li class="left-header"><a href="#" class="nav-header1">FEATURES</a></li>
+                            <li class="left-header"><a href="#" class="nav-header1">ELEMENTS</a></li>
                         </ul>
                         <ul class="nav-right-header">
                             <li class="right-header"><a href="#"><img src="./images/Language.png" alt=""></a></li>

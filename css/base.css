@@ -104,7 +104,13 @@ hr {
     font-size: 15px;
     margin-left: -16px;
 }
-
+.icon{
+    display: none;
+}
+.icon-list{
+    width: 20px;
+    height: 20px;
+}
 /* ----------------slider-dark---------------- */
 .slider-dark {
     color: #ffffff;
@@ -167,8 +173,9 @@ hr {
     padding: 0.5em 0.5em;
     border: 1px solid #ffffff;
 }
-.round-circle.active{
-    background-color: #00bcd4;  
+.round-circle:hover{
+    background-color: #00bcd4;
+    cursor: pointer;
 }
 
 /* ---------arrow---------- */
