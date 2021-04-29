@@ -265,17 +265,13 @@
         width: 100%;
     }
     .columns{
-        width: 293px;
+        width: 25%;
     }
 
-    .pricing-table,
-    .pricing-table-dark,
-    .pricing-table-gray,
-    .pricing-table-white {
-        display: grid !important;
-        grid-template-columns: auto auto !important;
+    .pricing-table {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
         justify-content: center !important;
-        grid-gap: 30px;
     }
 
     /* -------pricing-table------- */
@@ -386,17 +382,13 @@
         width: 100%;
     }
     .columns{
-        width: 293px;
+        width: auto;
     }
 
-    .pricing-table,
-    .pricing-table-dark,
-    .pricing-table-gray,
-    .pricing-table-white {
-        display: grid !important;
-        grid-template-columns: auto auto !important;
-        justify-content: center !important;
-        grid-gap: 30px;
+    .pricing-table {
+        display: contents;
+        grid-template-columns: auto auto auto auto;
+        
     }
 
     /* -------pricing-table------- */
@@ -500,7 +492,7 @@
     }
 }
 /* --------------------max-width: 411px------------------------ */
-/*@media only screen and (min-width:411px){
+@media only screen and (min-width:411px){
     .container {
         width: calc(100% - 30px);
     }
@@ -510,21 +502,11 @@
     .top-nav.responsive .nav {
         padding-top: 60px;
     }
-    .pricing-table,
-    .pricing-table-dark,
-    .pricing-table-gray,
-    .pricing-table-white {
-        grid-template-columns: auto !important;
-        grid-gap: 60px;
-    }
-    .fa-arrow-left {
-        display: none;
-    }
-    .fa-arrow-right {
-        display: none;
+    .pricing-table{
+        grid-template-columns: auto auto auto auto;
     }
 
-}*/
+}
 @media only screen and (max-width: 411px) {
     .container {
         width: calc(100% - 30px);
@@ -535,12 +517,8 @@
     .top-nav.responsive .nav {
         padding-top: 60px;
     }
-    .pricing-table,
-    .pricing-table-dark,
-    .pricing-table-gray,
-    .pricing-table-white {
-        grid-template-columns: auto !important;
-        grid-gap: 60px;
+    .pricing-table {
+        grid-template-columns: auto auto auto auto;
     }
     
 
