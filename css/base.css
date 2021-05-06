@@ -40,7 +40,7 @@ hr {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    width: 100%;
+    width: auto;
 }
 .row{
     display:contents;
@@ -90,7 +90,7 @@ hr {
     color: #00bcd4;
     cursor: pointer;
 }
-.nav-header .active {
+.nav-header .active:hover {
     border: 2px solid #ffffff;
 }
 .active .nav-header1{
@@ -268,18 +268,18 @@ hr {
     position: relative;
     cursor: pointer;
 }
-.right:before{
+.right::before{
     right: -3px;
     bottom: -4px;
     transform: rotate(-45deg);
 }
-.right:after{
+.right::after{
     right: -3px;
     top: -4px;
     transform: rotate(-135deg);
 }
 
-.right:before, .right:after {
+.right::before, .right::after {
     content: "";
     background: #fff;
     position: absolute;
@@ -313,7 +313,7 @@ hr {
 /* pricing tables*/
 .pricing-table {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     margin-bottom: 185px;
 }
 .columns {
@@ -498,6 +498,9 @@ hr {
     max-width: 1920px;
     background-color: #212331;
     padding: 130px 0 100px;
+    grid-template-columns: 50px 50px 50px 50px; 
+    grid-gap: 10px;
+    
 }
 .widgets .container {
     display: flex;
@@ -854,19 +857,19 @@ hr {
 .copy-right-p{
     color:#99a9b5;
 }
-.footer-nav {
+.footer-nav-left{
     display: flex;
     justify-content: space-between;
 }
-.footer-nav .nav {
+.nav-left-list {
     display: flex;
 }
-.text {
+.nav-left-list-item {
     display: block;
     position: relative;
     margin: 40px 0px;
 }
-.nav-a {
+.nav-left-list-item-a1 {
     color: #99a9b5 !important;
     padding: 0px 30px;
     border-right: 1px solid #333146;
@@ -874,10 +877,10 @@ hr {
 .last{
     border-right: none;
 }
-.nav-right {
+.nav-right-list {
     display: flex;
 }
-.social {
+.nav-right-list-social {
     position: relative;
     margin: 40px 10px;
     display: block;

@@ -2,10 +2,13 @@
     body {
         margin: auto;
     }
+    .header .container{
+        width: auto;
+    }
     .container {
         margin: auto;
         position: relative;
-        width: calc(100% - 50px);
+        
     }
     .main-menu {
         padding: 30px 9%;
@@ -36,48 +39,6 @@
         position: absolute;
         z-index: 9;
     }
-}
-@media only screen and (max-width: 1024px) {
-    body {
-      margin: auto;
-    }
-    .container {
-      margin: auto;
-      position: relative;
-      width: calc(100% - 50px);
-    }
-    .main-menu {
-      padding: 30px 9%;
-      width: 100%;
-    }
-    .nav-header li,
-    .nav-right-header li{
-      float: none;
-      display: none;
-    }
-    a.icon {
-      font-size: 25px;
-      float: right;
-      display: block;
-      color: #00bcd4;
-      right: 0;
-    }
-    .menu-header {
-      display: block;
-    }
-  
-    .main-menu {
-      position: fixed;
-      background-color: #2c2e3d;
-      z-index: 9;
-    }
-    .logo {
-      position: absolute;
-      z-index: 9;
-    }
-}
-
-@media only screen and(min-width: 1024px){
     .nav-header1 {
         line-height: 20px;
     }
@@ -130,11 +91,70 @@
         position: absolute;
         margin-right: 9%;
     }
+    .title-light {
+        margin: 80px auto;
+    }
+    .title-light {
+        font-size: 32px;
+    }
+    .title-text {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .sub-title {
+        font-size: 20px;
+    }
+    
+    .price-span {
+        font-size: 50px;
+    }
+    .feed .flex-container .flex-flick {
+        width: 60px;
+        height: 60px;
+    }
 }
-
-
-  
 @media only screen and (max-width: 1024px) {
+    body {
+      margin: auto;
+    }
+    .header .container{
+        width:auto;
+    }
+    .container {
+      margin: auto;
+      position: relative;
+      width: calc(100% - 50px);
+    }
+    .main-menu {
+      padding: 30px 9%;
+      width: 100%;
+    }
+    .nav-header li,
+    .nav-right-header li{
+      float: none;
+      display: none;
+    }
+    a.icon {
+      font-size: 25px;
+      float: right;
+      display: block;
+      color: #00bcd4;
+      right: 0;
+    }
+    .menu-header {
+      display: block;
+    }
+  
+    .main-menu {
+      position: fixed;
+      background-color: #2c2e3d;
+      z-index: 9;
+    }
+    .logo {
+      position: absolute;
+      z-index: 9;
+    }
     .nav-header1 {
         line-height: 20px;
     }
@@ -187,10 +207,6 @@
         position: absolute;
         margin-right: 9%;
     }
-}
-
-/* --------------title-light------------------ */
-@media only screen and(min-width:1024px) {
     .title-light {
         margin: 80px auto;
     }
@@ -202,179 +218,59 @@
         font-size: 12px;
         line-height: 25px;
     }
-}
-@media only screen and (max-width: 1024px) {
-    .title-light {
-        margin: 80px auto;
-    }
-    .title-light {
-        font-size: 32px;
-    }
-    .title-text {
-        text-align: justify;
-        font-size: 12px;
-        line-height: 25px;
-    }
-}
-
-/* ---------pricing-table-------- */
-@media only screen and(min-width:1024px){
     .sub-title {
-        font-size: 20px;
+        font-size: 14px;
+    }
+    .sub-h{
+        font-size: 18px;
     }
     
     .price-span {
-        font-size: 50px;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .sub-title {
-        font-size: 20px;
-    }
-    
-    .price-span {
-        font-size: 50px;
-    }
-}
-
-@media only screen and(min-width: 1024px){
-    .text {
-        font-size: 12px;
-    }
-    .flex-flick {
-        width: 60px;
-        height: 60px;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .text {
-        font-size: 12px;
+        font-size: 30px;
     }
     .flex-flick{
         width: 60px;
         height: 60px;
     }
+    .title-pri{
+        height: 86px;
+    }
+    .widgets .container {
+        width: auto;
+    }
+    .widgets .columns {
+        width: calc(25% - 20px);
+        position: relative;
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .contact-title,.recent-post-title,
+    .userful-link-title,.emailus-title,
+    .project-title,.feed-title,.newsletter-title{
+        font-size: 15px;
+    }
+    .nav-left-list-item {
+        display: flex;
+        position: relative;
+        margin: 40px 0px;
+    }
+
 }
 
 /* --------------------max-width: 767px -------------------------- */
 @media only screen and(min-width: 768px){
-    .container {
-        width: calc(100% - 50px);
-    }
-    .container.main-menu {
+    .header .container{
         width: 100%;
     }
-    .columns{
-        width: 25%;
-    }
-
-    .pricing-table {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-content: center !important;
-    }
-
-    /* -------pricing-table------- */
-    .price-span {
-        font-size: 65px;
-    }
-
-    /* -------slider dark------- */
-    .title-slider{
-        margin: 80px auto 70px;
-    }
-    .icon-slider {
-        margin: 120px auto 0px;
-        height: 60px;
-    }
-    .title-slider1 {
-        font-size: 40px;
-        text-transform: uppercase;
-    }
-    .slider-dark-body {
-        margin: auto;
-        font-size: 18px;
-    }
-    .slider-dark .buttons {
-        display: inline-flex;
-        flex-direction: row;
-        margin: 50px auto;
-    }
-    .slider-dark .btn {
-        position: relative;
-        display: block;
-        border-radius: 50px;
-        font-size: 12px;
-        padding: 5px 10px;
-        margin: 20px 10px;
-    }
-    .slider-dark .round {
-        margin-top: 40px;
-    }
-
-    .slider-title {
-        font-size: 40px;
-        margin: 70px auto 70px;
-    }
-    .slider-body {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .slider .btn {
-        margin: 70px 25px 70px;
-    }
-
-    /* ------------footer---------------- */
-    .footer .widgets {
-        padding: 60px 0;
-    }
-    .footer .widgets .container {
-        padding-top: 70px;
-        display: flex;
-        flex-direction: column;
-        width: -webkit-fill-available;
-        /* align-items: center; */
-        width: calc(100% - 50px);
-    }
-    .widgets .columns {
-        width: auto;
-    }
-
-    .in-text,
-    .send {
+    .container{
         width: 100%;
     }
-    .contact,
-    .useful-link,
-    .project{
-        padding-bottom: 70px;
-    }
-
-    .scroll-up{
-        position: fixed;
-        right: 30px;
-        bottom: 20px;
-    }
-
-    /* ---------footer menu-socials------------ */
-    .footer .menu-socials .container {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer-nav {
-        justify-content: center;
-    }
-    .nav-a {
-        padding: 0 10px;
-    }
-    .footer-nav-right .nav-right {
-        justify-content: center;
-    }
-    .social {
-        margin: 10px 0px;
-    }
+    
 }
 @media only screen and (max-width: 768px) {
+    .header .container{
+        width:auto;
+    }
     .container {
         width: calc(100% - 50px);
     }
@@ -442,10 +338,10 @@
     }
 
     /* ------------footer---------------- */
-    .footer .widgets {
+    .widgets {
         padding: 60px 0;
     }
-    .footer .widgets .container {
+    .widgets .container {
         padding-top: 70px;
         display: flex;
         flex-direction: column;
@@ -474,25 +370,28 @@
     }
 
     /* ---------footer menu-socials------------ */
-    .footer .menu-socials .container {
+    .menu-socials .container {
         display: flex;
         flex-direction: column;
     }
-    .footer-nav {
+    .footer-nav-left {
         justify-content: center;
     }
-    .nav-a {
+    .nav-left-list-item-a1 {
         padding: 0 10px;
     }
-    .footer-nav-right .nav-right {
+    .nav-right-list {
         justify-content: center;
     }
-    .social {
+    .nav-right-list-social {
         margin: 10px 0px;
     }
 }
 /* --------------------max-width: 411px------------------------ */
 @media only screen and (min-width:411px){
+    .header .container{
+        width:auto;
+    }
     .container {
         width: calc(100% - 30px);
     }
@@ -503,11 +402,18 @@
         padding-top: 60px;
     }
     .pricing-table{
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .flex-container .flex-flick{
+        width: 60px;
+        height: 60px;
     }
 
 }
 @media only screen and (max-width: 411px) {
+    .header .container{
+        width:auto;
+    }
     .container {
         width: calc(100% - 30px);
     }
@@ -518,8 +424,7 @@
         padding-top: 60px;
     }
     .pricing-table {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
-
 }
