@@ -42,8 +42,13 @@ hr {
     margin: 0 auto;
     width: auto;
 }
+.header .container .row{
+    display: contents;
+}
 .row{
-    display:contents;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .main-menu {
     padding-top: 35px;
@@ -131,24 +136,6 @@ hr {
     left: 100%;
     width: 100%;
 }
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-  
 .icon-slider{
     position: relative;
     margin-top: 120px;
@@ -315,6 +302,7 @@ hr {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-bottom: 185px;
+    flex: 1 0 auto;
 }
 .columns {
     padding: 20px 0;
@@ -491,6 +479,10 @@ hr {
     color: #00bcd4;
     border: 2px solid #00bcd4;
     background-color: #494b58;
+}
+.slider .purchase:hover{
+    color: #ffffff;
+    background: #4ec3c9;
 }
 
 /* -----------------footer .widgets ----------------- */
@@ -675,15 +667,6 @@ hr {
     padding-bottom: 30px;
     color: #feffff;
 }
-.project .flex-container{
-    position: absolute;
-}
-.slider-footer{
-    position: relative;
-    /*overflow: hidden;*/
-    height: 180px;
-    justify-content: center;
-}
 .flex-container {
     margin-top: 10px;
     display: grid;
@@ -807,12 +790,7 @@ hr {
 }
 .round-footer{
     text-align: center;
-    /*position: relative;
-    padding-top: 10px;
-    text-align: center;
-    letter-spacing: 5px;
-    color: #394050;
-    font-size: large;*/
+    margin: 10px;
 }
 .round-footer .active{
     background-color: #99a9b5;
@@ -860,6 +838,10 @@ hr {
 .footer-nav-left{
     display: flex;
     justify-content: space-between;
+    margin-left: 6em;
+}
+.footer-nav-right{
+    margin-left: 10em;
 }
 .nav-left-list {
     display: flex;
