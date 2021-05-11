@@ -284,6 +284,9 @@
     .pricing-table {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .recent-post, .feed{
+        height: 30em;
+    }
     .flex-container{
         display: flex;
         flex-wrap: wrap;
@@ -306,7 +309,10 @@
     }
     .nav-left-list-item-a1 {
         padding: 0 10px;
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .nav-left-list{
+        flex-wrap: wrap;
     }
     .nav-right-list {
         justify-content: center;

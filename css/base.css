@@ -415,7 +415,7 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
     transition-duration: 0.5s;
 }
 .new-title-small {
-    line-height: 13px;
+    line-height: 11px;
     font-size: 12px;
     text-transform: none;
     opacity: 0.5;
