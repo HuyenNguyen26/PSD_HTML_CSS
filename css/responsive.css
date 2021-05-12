@@ -278,6 +278,15 @@
     .main-menu {
         width: 100%;
     }
+    .slider-body {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .slider-dark .buttons {
+        display: inline-flex;
+        flex-direction: row;
+        margin: 0px auto;
+    }
     .top-nav.responsive .nav {
         padding-top: 60px;
     }
