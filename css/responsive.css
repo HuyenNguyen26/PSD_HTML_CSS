@@ -184,10 +184,7 @@
         font-size: 40px;
         text-transform: uppercase;
     }
-    .slider-dark-body {
-        margin: auto;
-        font-size: 18px;
-    }
+    
     .slider-dark .buttons {
         display: inline-flex;
         flex-direction: row;
@@ -277,6 +274,11 @@
     }
     .main-menu {
         width: 100%;
+    }
+    .slider-dark-body {
+        margin: auto;
+        line-height: 25px;
+        font-size: 14px;
     }
     .slider-body {
         font-size: 12px;
