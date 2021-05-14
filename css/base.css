@@ -656,7 +656,7 @@ h3::before{
     color: #feffff;
 }
 .userful-link-list{
-    color: #99a9b5;
+    color: #04a8be;
     list-style-type: disc;
     margin: auto;
 }
@@ -665,8 +665,14 @@ h3::before{
     font-size: 15px;
     line-height: 35px;
 }
-.userful-link-list-item:hover{
+.userful-link-list-item-1{
+    color:#99a9b5;
+}
+.userful-link-list-item-1:hover{
     color: #04a8be;
+}
+.userful-link-list-item:hover{
+    color: #ffffff;
 }
 .userful-link-list-item:last-child {
     border: none;
@@ -741,8 +747,8 @@ h3::before{
     transition: 1s;
 }
 .flex-flick {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 .flex-flick:nth-child(1),
 .flex-flick:nth-child(6){
