@@ -236,7 +236,7 @@
     .project{
         padding-bottom: 70px;
     }
-    .flex-container{
+    .feed-flex-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -298,10 +298,14 @@
     .recent-post, .feed{
         height: 30em;
     }
-    .flex-container{
+    .feed-flex-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    .flex-container .flex-flick{
+        width: 55px;
+        height: 55px;
     }
     .flex-flick{
         width: 80px;

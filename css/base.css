@@ -10,16 +10,19 @@ a {
     text-decoration: none;
 }
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     line-height: 1;
     max-width: 1920px;
 }
 p,li, small{
     font-family: 'Source Sans Pro',sans-serif;
 }
+a,h1,h2,address{
+    font-family: "Montserrat";
+}
 hr {
     margin: 30px 0;
-    border: 1px dashed #dfe5e8;
+    border-bottom: 1.9px dashed #5f727f;
 }
 *{
     margin: 0;
@@ -108,9 +111,11 @@ hr {
     cursor: pointer;
 }
 .cart{
+    position: relative;
+    top: -32px;
+    left: 15px;
     color: white;
     font-size: 15px;
-    margin-left: -16px;
 }
 .icon{
     display: none;
@@ -167,7 +172,7 @@ hr {
 .slider-dark .btn {
     display: inline-block;
     border-radius: 50px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px 20px;
     cursor: pointer;
     color: #ffffff;
@@ -377,9 +382,6 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
 }
 .price {
     background-color: #f0f3f2;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     border: 1px solid #dfe5e8;
     transition-timing-function: ease;
     transition-duration: 0.5s;
@@ -389,7 +391,6 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
 .price:hover {
     background-color: #ffffff;
     cursor: pointer;
-    background-color: #ffffff;
     height: calc(100% + 25px);
 }
 .price:hover > .title-column .title-pri{
@@ -398,6 +399,7 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
     border: 1px solid #dfe5e8;
     border-bottom: none;
 }
+
 .title-column {
     color: #5f727f;
     font-size: 25px;
@@ -407,19 +409,19 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
     padding: 0;
 }
 .title-pri{
-    position: relative;
-    border: 1px solid #dfe5e8;
-    border-bottom: none;
     padding: 30px;
     background-color: #f0f3f2;
     transition-timing-function: ease;
     transition-duration: 0.5s;
 }
-.new-title-small {
-    line-height: 11px;
+.new-title-small{
+    line-height: 15px;
     font-size: 12px;
     text-transform: none;
     opacity: 0.5;
+}
+.price-list{
+    list-style-type: none;
 }
 .price-row {
     border-bottom: 1px solid #dfe5e8;
@@ -448,6 +450,11 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
 }
 .price-span {
     font-size: 65px;
+    font-weight:300 ;
+}
+.price-p {
+    font-size: 16px;
+    margin-top: 10px;
 }
 .subtitle {
     height: 80px;
@@ -456,6 +463,7 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
     font-weight: 300;
     font-size: 26px;
     margin: unset;
+    font-family: "Source Sans Pro";
 }
 .sub-title{
     font-size: 12px;
@@ -475,7 +483,7 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
     background-color: #a289e8;
 }
 
-h3::before{
+.new .title-pri::before{
     margin: 0 10px;
     background-color: #393d50;
     color: #ffffff;
@@ -497,7 +505,7 @@ h3::before{
     color: white;
     padding: 10px 25px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 30px;
 }
 .order .button:hover{
@@ -542,6 +550,7 @@ h3::before{
     color: #00bcd4;
     border: 2px solid #00bcd4;
     background-color: #494b58;
+    font-weight: 600;
 }
 .slider .purchase:hover{
     color: #ffffff;
@@ -579,7 +588,7 @@ h3::before{
 .contact-title {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 30px;
     color: #feffff;
 }
@@ -587,6 +596,9 @@ h3::before{
     line-height: 25px;
     font-size: 14px;
     color: #99a9b5;
+}
+.contact-add{
+    font-size: 12px;
 }
 .contact-a {
     color: #16a7b9;
@@ -617,7 +629,7 @@ h3::before{
 .recent-post-title{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 30px;
     color: #feffff;
 }
@@ -626,8 +638,11 @@ h3::before{
     margin-left: 5px;
     color: #99a9b5;
     font-size: 14px;
-    border-bottom: 1px dashed #dfe5e8;
+    border-bottom: 1.8px dashed #5f727f;
     padding: 10px 0;
+}
+.recent-post-list-item:last-child{
+    border: none;
 }
 .recent-post-list-item-img{
     margin-right: 5px;
@@ -651,7 +666,7 @@ h3::before{
 .userful-link-title{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 30px;
     color: #feffff;
 }
@@ -661,7 +676,8 @@ h3::before{
     margin: auto;
 }
 .userful-link-list-item {
-    border-bottom: 1px dashed #dfe5e8;
+    /*border-bottom: 1px dashed #dfe5e8;*/
+    border-bottom: dashed 1.8px #5f727f;
     font-size: 15px;
     line-height: 35px;
 }
@@ -686,7 +702,7 @@ h3::before{
 .emailus-title{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 30px;
     color: #feffff;
 }
@@ -732,11 +748,11 @@ h3::before{
 .project-title{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 30px;
     color: #feffff;
 }
-.flex-container {
+.flex-container, .feed-flex-container {
     position: absolute;
     margin-top: 10px;
     display: grid;
@@ -784,27 +800,27 @@ h3::before{
 .feed-title{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 30px;
     color: #feffff;
 }
-.flex-container .flex-flick:nth-child(1),
-.flex-container .flex-flick:nth-child(6){
+.flex-flick:nth-child(1),
+.flex-flick:nth-child(6){
     background-color: #b6c6c9;
 }
-.flex-container .flex-flick:nth-child(2),
-.flex-container .flex-flick:nth-child(4),
-.flex-container .flex-flick:nth-child(9){
+.flex-flick:nth-child(2),
+.flex-flick:nth-child(4),
+.flex-flick:nth-child(9){
     background-color: #828e97;
 }
-.flex-container .flex-flick:nth-child(3),
-.flex-container .flex-flick:nth-child(8){
+.flex-flick:nth-child(3),
+.flex-flick:nth-child(8){
     background-color: #bcbcbc;
 }
-.flex-container .flex-flick:nth-child(5){
+.flex-flick:nth-child(5){
     background-color: #5f727f;
 }
-.flex-container .flex-flick:nth-child(7){
+.flex-flick:nth-child(7){
     background-color: #dfe5e8;
 }
 
@@ -815,7 +831,7 @@ h3::before{
 .newsletter-title{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 30px;
     color: #feffff;
 }
@@ -915,7 +931,7 @@ h3::before{
 .footer-nav-left{
     display: flex;
     justify-content: space-between;
-    margin-left: 6em;
+    margin-left: 5em;
 }
 .footer-nav-right{
     margin-left: 10em;
@@ -932,6 +948,7 @@ h3::before{
     color: #99a9b5 !important;
     padding: 0px 30px;
     border-right: 1px solid #333146;
+    font-family: "Source Sans Pro";
 }
 .last{
     border-right: none;
