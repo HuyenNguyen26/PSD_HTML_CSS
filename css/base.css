@@ -100,6 +100,7 @@ hr {
 }
 .nav-header .active:hover {
     border: 2px solid #ffffff;
+    height: 40px;
 }
 .active .nav-header1{
     font-weight: 600;
@@ -678,17 +679,26 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
 .userful-link-list-item {
     /*border-bottom: 1px dashed #dfe5e8;*/
     border-bottom: dashed 1.8px #5f727f;
-    font-size: 15px;
     line-height: 35px;
+    list-style: none;
+}
+.userful-link-list-item-2{
+    height: 5px;
+    width: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #04a8be;
 }
 .userful-link-list-item-1{
     color:#99a9b5;
+    font-size: 15px;
 }
 .userful-link-list-item-1:hover{
     color: #04a8be;
 }
-.userful-link-list-item:hover{
-    color: #ffffff;
+.userful-link-list-item-1:hover .userful-link-list-item-2{
+    background-color: #ffffff;
 }
 .userful-link-list-item:last-child {
     border: none;
