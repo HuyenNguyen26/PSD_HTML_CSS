@@ -58,6 +58,7 @@
     .top-nav .nav {
         flex-direction: column;
     }
+
     .price-row {
         border-bottom: 1px solid #dfe5e8;
         padding: 20px;
@@ -97,9 +98,17 @@
         margin-right: 9%;
     }
     .pricing-table {
-        display: contents;
-        grid-template-columns: auto auto auto auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+        align-items: center;
         
+        margin-top: 8rem;
+        min-height: 75rem;
+    }
+    .columns{
+        width: 40%;
     }
     .title-light {
         margin: 80px auto;
@@ -148,6 +157,7 @@
         position: relative;
         margin: 40px 0px;
     }
+    
 
 }
 /* --------------------max-width: 767px -------------------------- */
@@ -162,7 +172,8 @@
         width: 100%;
     }
     .columns{
-        width: auto;
+        width: 48%;
+        margin-bottom: 4rem;
     }
 
     .pricing-table {
@@ -236,6 +247,9 @@
     .project{
         padding-bottom: 70px;
     }
+    .flex-container .fade{
+        align-items: center;
+    }
     .feed-flex-container{
         display: flex;
         flex-wrap: wrap;
@@ -262,10 +276,16 @@
     .nav-right-list-social {
         margin: 10px 0px;
     }
+    .recent-post-list-item-cmt{
+        align-items: center;
+    }
+    .slider-footer{
+        height: 15rem;
+    }
 }
 
-/* --------------------max-width: 411px------------------------ */
-@media only screen and (max-width: 411px) {
+/* --------------------max-width: 480px------------------------ */
+@media only screen and (max-width: 480px) {
     .header .container{
         width:auto;
     }
@@ -293,7 +313,11 @@
         padding-top: 60px;
     }
     .pricing-table {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 3rem;
+    }
+    .columns{
+        width: 100%;
+        margin-bottom: 4rem;
     }
     .recent-post, .feed{
         height: 30em;
@@ -334,5 +358,10 @@
     }
     .nav-right-list-social {
         margin: 10px 0px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .content_card {
+      padding: 0;
     }
 }

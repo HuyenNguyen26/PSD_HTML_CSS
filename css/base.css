@@ -134,22 +134,22 @@ hr {
     color: #2c2e3d;
 }
 .slider-dark {
-    position: absolute;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
     text-align: center;
-    padding: 1.5em;
-    transition: 1s;
-    left: 100%;
-    width: 100%;
+    position: relative;
 }
 .icon-slider{
     position: relative;
-    margin-top: 120px;
+    margin: 90px auto;
 }
 .title-slider{
     font-size: 40px;
     line-height: 50px;
-    margin: 110px auto 70px;
+    margin: auto 70px;
     text-transform: uppercase;
 }
 .title-slider1 {
@@ -186,166 +186,53 @@ hr {
     border: 2px solid #00bcd4;
     background-color: #2c2e3d;
 }
+.prev,.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(33, 35, 49, 0.6);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    user-select: none; 
+
+}
+.prev:hover,.next:hover {
+    background-color: #00bcd4;
+    transition: 0.6s ease;
+}
+.next {
+    right: 0px; 
+}
+.prev {
+    left: 0px; 
+}
 .currentSlide {
     text-align: center;
-    margin: 0 0 50px;
-    color: #2c2e3d;
+    position: absolute;
+    width: 100%;
+    bottom: 3%; 
 }
 .dot {
-    padding: 7px;
-    margin: 0 10px;
-    border: 3px solid #ffffff;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    margin: 0 12px;
+    border: 3px solid #fff;
+    background-color: #2c2e3d;
     border-radius: 50%;
     display: inline-block;
-    color: #2c2e3d;
     transition: background-color 0.6s ease;
+    font-size: 0; 
 }
-.dot.active,
-.dot:hover {
-    background-color: #00bcd4;
-    color: #00bcd4;
-}
-/* -----------animation slideshow------------ */
-
-/* -webkit-animation la mot phan mo rong CSS doc quyen 
-duoc ho tro boi cong cu trinh duyet Webkit (nhu Apple Safari, Google Chrome)
-Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteration_count> <direction> [, ... ]; */
-
-@-webkit-keyframes slideIn {
-    100% {
-      left: 0;
-    }
-  }
-  /* 100% khi hoat canh hoan tat  */
-  @keyframes slideIn {
-    100% {
-      left: 0; 
-    }
-  }
-  
-  /* slide chuyen dong tu phai vao  (nextSlide)*/
-  .slideInRight {
-    left: -100%;
-    -webkit-animation: slideIn 1s forwards;
-    animation: slideIn 1s forwards; 
-    /* animation-fill-mode: forwards; phan tu se giu lai cac gia tri kieu duoc dat boi keyframe cuoi cung */
-  }
-  
-  /* slide chuyen dong tu trai vao (prevSlide) */
-  .slideInLeft {
-    left: 100%;
-    -webkit-animation: slideIn 1s forwards;
-    animation: slideIn 1s forwards;
-  }
-  
-  /* slide chuyen dong ra ben trai (nextSlide) */
-  @-webkit-keyframes slideOutLeft {
-    100% {
-      left: -100%;
-    }
-  }
-  @keyframes slideOutLeft {
-    100% {
-      left: -100%;
-    }
-  }
-  .slideOutLeft {
-    -webkit-animation: slideOutLeft 1s forwards;
-    animation: slideOutLeft 1s forwards;
-  }
-  
-  /* slide chuyen dong ra ben phai (prevSlide) */
-  @-webkit-keyframes slideOutRight {
-    100% {
-      left: 100%;
-    }
-  }
-  @keyframes slideOutRight {
-    100% {
-      left: 100%;
-    }
-  }
-  .slideOutRight {
-    -webkit-animation: slideOutRight 1s forwards;
-    animation: slideOutRight 1s forwards;
-  }
-/* ---------arrow---------- */
-.arrow .btn {
-    color: #ffffff;
-    position: relative;
-    max-width: 1920px;
-}
-.slider-buttons-prev {
-    float: left;
-    background-color: #212331;
-    padding: 25px;
-    width: 50px;
-    transform: translateX(0px) translateY(-500px);
-    
-}
-.slider-buttons-next {
-    float: right;
-    background-color: #212331;
-    padding: 25px;
-    width: 50px;
-    transform: translateX(0px) translateY(-500px);
-}
-/* arrow-left*/
-.left{
-    background: #fff;
-    height: 3px;
-    width: 15px;
-    margin-left: -0.7em;
-    position: relative;
-    cursor: pointer;
-}
-.left:before{
-    left: -3px;
-    bottom: -4px;
-    transform: rotate(45deg);
-}
-.left:after{
-    left: -3px;
-    top: -4px;
-    transform: rotate(135deg);
-}
-
-.left:before, .left:after {
-    content: "";
-    background: #fff;
-    position: absolute;
-    height: 3px;
-    width: 10px;
-}
-/* arrow-right*/
-.right{
-    background: #fff;
-    height: 3px;
-    width: 15px;
-    margin-left: -0.7em;
-    position: relative;
-    cursor: pointer;
-}
-.right::before{
-    right: -3px;
-    bottom: -4px;
-    transform: rotate(-45deg);
-}
-.right::after{
-    right: -3px;
-    top: -4px;
-    transform: rotate(-135deg);
-}
-
-.right::before, .right::after {
-    content: "";
-    background: #fff;
-    position: absolute;
-    height: 3px;
-    width: 10px;
-}
-.slider-buttons-prev:hover,.slider-buttons-next:hover {
-    background-color: #00bcd4;
+.currentSlide .active,.currentSlide .dot:hover {
+    background-color: #08a6bc; 
 }
 
 /* ------------- title-light ----------- */
@@ -791,7 +678,7 @@ Syntax: -webkit-animation: <name> <duration> <timing_function> <delay> <iteratio
 .slider-footer{
     position: relative;
     overflow: hidden;
-    height: 180px;
+    height: 13rem;
     justify-content: center;
 }
 .dot-footer{
