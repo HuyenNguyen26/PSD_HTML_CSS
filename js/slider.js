@@ -1,11 +1,11 @@
 //
 function myFunction() {
-    let x = document.getElementById("top-nav-header");
-    if (x.className === "top-nav") {
-        x.className += " responsive";
-    } else {
-        x.className = "top-nav";
-    }
+  let x = document.getElementById("top-nav-header");
+  if (x.className === "top-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "top-nav";
+  }
 }
 /*
 const slidersHeader = document.querySelectorAll(".slider-dark"),
@@ -187,110 +187,110 @@ function showSlides(
 }
 */
 // slideshow using javascript
-slider('.slidershow', {})
-slider('.slider-footer', { showArrow: false })
+slider(".slidershow", {});
+slider(".slider-footer", { showArrow: false });
 function slider(slideContainerClass, { showDot = true, showArrow = true }) {
-  let slideIndex = 1
-  let myTimer
-  let arrowLeftElm = document.createElement('button')
-  let arrowRightElm = document.createElement('button')
+  let slideIndex = 1;
+  let myTimer;
+  let arrowLeftElm = document.createElement("button");
+  let arrowRightElm = document.createElement("button");
   let slidesElm = document
     .querySelector(slideContainerClass)
-    .getElementsByClassName('slide-item')
+    .getElementsByClassName("slide-item");
   let dotsElm = document
     .querySelector(slideContainerClass)
-    .getElementsByClassName('dot')
-  let slideItem = document.querySelector(slideContainerClass).children
+    .getElementsByClassName("dot");
+  let slideItem = document.querySelector(slideContainerClass).children;
   const addClassforChild = () => {
     for (let i = 0; i < slideItem.length; i++) {
-      slideItem[i].classList.add('slide-item')
+      slideItem[i].classList.add("slide-item");
     }
-  }
-  addClassforChild()
+  };
+  addClassforChild();
   myTimer = setInterval(function () {
-    moveSlide(1)
-  }, 2000)
+    moveSlide(1);
+  }, 2000);
   const moveSlide = (indexSlideElm) => {
-    clearInterval(myTimer)
+    clearInterval(myTimer);
     if (indexSlideElm < 0) {
-      showSlides((slideIndex -= 1))
+      showSlides((slideIndex -= 1));
     } else {
-      showSlides((slideIndex += 1))
+      showSlides((slideIndex += 1));
     }
     myTimer =
       indexSlideElm === -1
         ? setInterval(function () {
-            moveSlide(indexSlideElm + 2)
+            moveSlide(indexSlideElm + 2);
           }, 2000)
         : setInterval(function () {
-            moveSlide(indexSlideElm + 1)
-          }, 2000)
-  }
+            moveSlide(indexSlideElm + 1);
+          }, 2000);
+  };
   const currentSlide = (indexSlideElm) => {
-    clearInterval(myTimer)
+    clearInterval(myTimer);
     myTimer = setInterval(function () {
-      moveSlide(indexSlideElm + 1)
-    }, 2000)
-    showSlides((slideIndex = indexSlideElm))
-  }
+      moveSlide(indexSlideElm + 1);
+    }, 2000);
+    showSlides((slideIndex = indexSlideElm));
+  };
   const showSlides = (indexSlideElm) => {
     if (indexSlideElm > slidesElm.length) {
-      slideIndex = 1
+      slideIndex = 1;
     }
     if (indexSlideElm < 1) {
-      slideIndex = slidesElm.length
+      slideIndex = slidesElm.length;
     }
     for (let i = 0; i < slidesElm.length; i++) {
-      slidesElm[i].style.display = 'none'
+      slidesElm[i].style.display = "none";
     }
     for (let i = 0; i < dotsElm.length; i++) {
       if (showDot) {
-        dotsElm[i].className = dotsElm[i].className.replace(' active', '')
+        dotsElm[i].className = dotsElm[i].className.replace(" active", "");
       }
     }
-    slidesElm[slideIndex - 1].style.display = 'grid'
+    slidesElm[slideIndex - 1].style.display = "grid";
     if (showDot) {
-      dotsElm[slideIndex - 1].className += ' active'
+      dotsElm[slideIndex - 1].className += " active";
     }
-  }
+  };
 
   if (showArrow) {
-    arrowLeftElm.innerHTML = '&#8592;'
-    document.querySelector(slideContainerClass).appendChild(arrowLeftElm)
-    arrowLeftElm.classList.add('prev')
-    arrowRightElm.innerHTML = '&#8594;'
-    document.querySelector(slideContainerClass).appendChild(arrowRightElm)
-    arrowRightElm.classList.add('next')
+    arrowLeftElm.innerHTML = "&#8592;";
+    document.querySelector(slideContainerClass).appendChild(arrowLeftElm);
+    arrowLeftElm.classList.add("prev");
+    arrowRightElm.innerHTML = "&#8594;";
+    document.querySelector(slideContainerClass).appendChild(arrowRightElm);
+    arrowRightElm.classList.add("next");
     arrowLeftElm.onclick = function () {
-      moveSlide(-1)
-    }
+      moveSlide(-1);
+    };
     arrowRightElm.onclick = function () {
-      moveSlide(1)
-    }
+      moveSlide(1);
+    };
   } else {
-    arrowLeftElm.style.visibility = 'hidden'
-    arrowRightElm.style.visibility = 'hidden'
+    arrowLeftElm.style.visibility = "hidden";
+    arrowRightElm.style.visibility = "hidden";
   }
   if (showDot) {
-    let dotContainer = document.createElement('div')
+    let dotContainer = document.createElement("div");
     let parent = document
       .querySelector(slideContainerClass)
-      .appendChild(dotContainer)
-    dotContainer.classList.add('currentSlide')
+      .appendChild(dotContainer);
+    dotContainer.classList.add("currentSlide");
     for (let i = 0; i < slidesElm.length; i++) {
-      let dotsElm = document.createElement('button')
-      dotsElm.innerHTML = slideIndex++
-      parent.appendChild(dotsElm)
-      dotsElm.classList.add('dot')
+      let dotsElm = document.createElement("button");
+      dotsElm.innerHTML = slideIndex++;
+      parent.appendChild(dotsElm);
+      dotsElm.classList.add("dot");
     }
     for (let i = 0; i < dotsElm.length; i++) {
       for (let indexDot = i; indexDot < i + 1; indexDot++) {
-        indexDot++
+        indexDot++;
         dotsElm[i].onclick = function () {
-          currentSlide(indexDot)
-        }
+          currentSlide(indexDot);
+        };
       }
     }
   }
-  showSlides(slideIndex)
+  showSlides(slideIndex);
 }
