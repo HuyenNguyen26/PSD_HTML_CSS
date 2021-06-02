@@ -278,7 +278,7 @@
         margin: 10px 0px;
     }
     .slider-footer{
-        height: 15rem;
+        height: 10rem;
     }
 }
 
@@ -292,6 +292,9 @@
     }
     .main-menu {
         width: 100%;
+    }
+    .title-slider{
+        margin: 30px auto 60px;
     }
     .slider-dark-body {
         margin: auto;
@@ -362,4 +365,5 @@
     .content_card {
       padding: 0;
     }
+
 }
