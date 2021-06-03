@@ -321,7 +321,7 @@
         margin-bottom: 4rem;
     }
     .recent-post, .feed{
-        height: 30em;
+        height: 16em;
     }
     .feed-flex-container{
         display: flex;
@@ -364,6 +364,12 @@
 @media only screen and (max-width: 360px) {
     .content_card {
       padding: 0;
+    }
+    .title-slider {
+        margin: 30px auto 30px;
+    }
+    .recent-post, .feed{
+        height: 30em;
     }
 
 }
