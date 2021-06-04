@@ -238,15 +238,9 @@
     .widgets .columns {
         width: 100%;
     }
-
     .in-text,
     .send {
         width: 100%;
-    }
-    .contact,
-    .useful-link,
-    .project{
-        padding-bottom: 70px;
     }
     .flex-container.fade{
         width: 100%;
@@ -310,8 +304,8 @@
         flex-direction: row;
         margin: 0px auto;
     }
-    .top-nav.responsive .nav {
-        padding-top: 60px;
+    .responsive .nav {
+        padding-top: 10rem;
     }
     .pricing-table {
         padding: 0 3rem;
@@ -321,7 +315,7 @@
         margin-bottom: 4rem;
     }
     .recent-post, .feed{
-        height: 16em;
+        height: 20em;
     }
     .feed-flex-container{
         display: flex;
@@ -341,7 +335,6 @@
         flex-direction: column;
     }
     .footer-nav-left {
-        justify-content: center;
         margin-left: 5px;
     }
     .footer-nav-right{
@@ -350,9 +343,6 @@
     .nav-left-list-item-a1 {
         padding: 0 10px;
         font-size: 14px;
-    }
-    .nav-left-list{
-        flex-wrap: wrap;
     }
     .nav-right-list {
         justify-content: center;
@@ -368,8 +358,21 @@
     .title-slider {
         margin: 30px auto 30px;
     }
-    .recent-post, .feed{
-        height: 30em;
+    .title-slider1{
+        font-size: 30px;
     }
-
+    .recent-post, .feed{
+        height: 28rem;
+    }
+    .slider-buttons-prev {
+        padding: 20px;
+        width: 20px;
+    }
+    .slider-buttons-next {
+        padding: 20px;
+        width: 20px;
+    }
+    .nav-left-list{
+        flex-wrap: wrap;
+    }
 }
