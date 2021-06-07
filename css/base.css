@@ -321,7 +321,7 @@ hr {
 .pricing-table {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin-bottom: 185px;
+    margin-bottom: 10rem;
     flex: 1 0 auto;
 }
 .columns {
@@ -481,7 +481,7 @@ hr {
 .slider-body {
     line-height: 37px;
     text-align: left;
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 300;
 }
 .slider .btn {
@@ -507,10 +507,7 @@ hr {
 .widgets {
     max-width: 1920px;
     background-color: #212331;
-    padding: 130px 0 100px;
-    grid-template-columns: 50px 50px 50px 50px; 
-    grid-gap: 10px;
-    
+    padding: 3rem 0 5rem;
 }
 .widgets .container {
     display: flex;
@@ -525,10 +522,9 @@ hr {
     margin-bottom: 70px;
 }
 .wid-title-text {
-    text-align: justify;
     padding-top: 40px;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 15px;
     color: #99a9b5;
 }
 .contact-title {
