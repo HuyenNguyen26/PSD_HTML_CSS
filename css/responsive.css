@@ -1,0 +1,402 @@
+@media only screen and (max-width: 1024px) {
+    body {
+      margin: auto;
+    }
+    .header .container{
+        width:auto;
+    }
+    .container {
+      margin: auto;
+      position: relative;
+      width: calc(100% - 50px);
+    }
+    .main-menu {
+      padding: 30px 9%;
+      width: 100%;
+      position: fixed;
+      background-color: #2c2e3d;
+      z-index: 9;
+      margin-left: 0%;
+    }
+    .slider-buttons-prev {
+        transform: translateX(0px) translateY(-450px);
+    }
+    .slider-buttons-next {
+        transform: translateX(0px) translateY(-450px);
+    }
+    .nav-header li,
+    .nav-right-header li{
+      float: none;
+      display: none;
+    }
+    a.icon {
+      font-size: 25px;
+      float: right;
+      display: block;
+      color: #00bcd4;
+      right: 0;
+    }
+    .menu-header {
+      display: block;
+    }
+    .logo {
+      position: absolute;
+      z-index: 9;
+    }
+    .nav-header1 {
+        line-height: 20px;
+    }
+    .nav-header {
+        display: block;
+        z-index: 9;
+        background-color: #2c2e3d;
+        visibility: visible;
+        transition: 0.5s ease;
+    }
+    .nav-right-header {
+        align-items: baseline;
+    }
+    .top-nav {
+        width: 100%;
+    }
+    .top-nav .nav {
+        flex-direction: column;
+    }
+    .title-slider{
+        line-height: 4rem;
+    }
+    .price-row {
+        border-bottom: 1px solid #dfe5e8;
+        padding: 20px;
+        font-size: 16px;
+    }
+    .responsive .nav {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #2c2e3d;
+        overflow: auto;
+        padding-top: 100px;
+    }
+    .responsive .nav-header {
+        width: 100%;
+        flex-direction: column;
+    }
+    .responsive .nav-header .active {
+        border: none;
+    }
+    .responsive .left-header,
+    .responsive .right-header{
+        position: relative;
+        z-index: 1;
+        display: block;
+        padding: 15px 0;
+    }
+    .responsive a.icon {
+        display: block;
+        z-index: 9;
+        position: absolute;
+        margin-right: 9%;
+    }
+    .pricing-table {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        min-height: 75rem;
+    }
+    .columns{
+        width: 40%;
+        margin-bottom: 4rem;
+    }
+    .title-light {
+        margin: 80px auto;
+    }
+    .title-light {
+        font-size: 32px;
+    }
+    .title-text {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .sub-title {
+        font-size: 14px;
+    }
+    .sub-h{
+        font-size: 18px;
+    }
+    
+    .price-span {
+        font-size: 30px;
+    }
+    .flex-flick{
+        width: 56px;
+        height: 56px;
+    }
+    .widgets .container {
+        width: auto;
+    }
+    .widgets .columns {
+        width: calc(25% - 20px);
+        position: relative;
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .contact-title,.recent-post-title,
+    .userful-link-title,.emailus-title,
+    .project-title,.feed-title,.newsletter-title{
+        font-size: 15px;
+    }
+    .nav-left-list-item {
+        display: flex;
+        position: relative;
+        margin: 40px 0px;
+    }
+    
+
+}
+/* --------------------max-width: 767px -------------------------- */
+@media only screen and (max-width: 768px) {
+    .header .container{
+        width:auto;
+    }
+    .container {
+        width: calc(100% - 50px);
+    }
+    .container.main-menu {
+        width: 100%;
+    }
+    .slider-buttons-prev {
+        transform: translateX(0px) translateY(-400px);
+    }
+    .slider-buttons-next {
+        transform: translateX(0px) translateY(-400px);
+    }
+    .columns{
+        width: 48%;
+        margin-bottom: 4rem;
+    }
+    .pricing-table {
+        display: contents;
+        grid-template-columns: auto auto auto auto;
+        
+    }
+    .price-span {
+        font-size: 65px;
+    }
+    .title-slider{
+        margin: 40px auto 0px;
+    }
+    .icon-slider {
+        margin: 120px auto 0px;
+        height: 60px;
+    }
+    .title-slider1 {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    .slider-dark .buttons {
+        display: inline-flex;
+        flex-direction: row;
+        margin: 50px auto;
+    }
+    .slider-dark .btn {
+        position: relative;
+        display: block;
+        border-radius: 50px;
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 20px 10px;
+    }
+    .slider-dark .round {
+        margin-top: 40px;
+    }
+    .slider-title {
+        font-size: 40px;
+        margin: 70px auto 70px;
+    }
+    .slider-body {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .slider .btn {
+        margin: 70px 25px 70px;
+    }
+    .widgets {
+        padding: 60px 0;
+    }
+    .widgets .container {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        width: -webkit-fill-available;
+        width: calc(100% - 50px);
+    }
+    .widgets .columns {
+        width: 100%;
+    }
+    .in-text,
+    .send {
+        width: 100%;
+    }
+    .flex-container.fade{
+        width: 100%;
+    } 
+    .feed-flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    .flex-flick{
+        width: 80px;
+        height: 80px;
+    }
+    .menu-socials .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav-left {
+        justify-content: space-between;
+    }
+    .nav-left-list-item-a1 {
+        padding: 0 10px;
+        
+    }
+    .nav-right-list {
+        justify-content: center;
+    }
+    .nav-right-list-social {
+        margin: 10px 0px;
+    }
+    .slider-footer{
+        height: 10rem;
+    }
+}
+
+/* --------------------max-width: 480px------------------------ */
+@media only screen and (max-width: 480px) {
+    .header .container{
+        width:auto;
+    }
+    .container {
+        width: calc(100% - 30px);
+    }
+    .main-menu {
+        width: 100%;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .top-nav{
+        margin-right: 0;
+    }
+    .slider-buttons-prev {
+        padding: 20px;
+        width: 20px;
+        transform: translateX(0px) translateY(-300px);
+    }
+    .slider-buttons-next {
+        padding: 20px;
+        width: 20px;
+        transform: translateX(0px) translateY(-300px);
+    }
+    .title-slider{
+        margin: 30px auto 20px;
+    }
+    .slider-dark-body {
+        margin: auto;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .slider-body {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .slider-dark .buttons {
+        display: inline-flex;
+        flex-direction: row;
+        margin: 0px auto;
+    }
+    .responsive .nav {
+        padding-top: 10rem;
+    }
+    .pricing-table {
+        padding: 0 3rem;
+    }
+    .columns{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .recent-post, .feed{
+        height: 20em;
+    }
+    .feed-flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    .flex-container .flex-flick{
+        width: 55px;
+        height: 55px;
+    }
+    .flex-flick{
+        width: 80px;
+        height: 80px;
+    }
+    .menu-socials .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav-left {
+        margin-left: 5px;
+    }
+    .footer-nav-right{
+        margin: 0px;
+    }
+    .nav-left-list-item-a1 {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    .nav-right-list {
+        justify-content: center;
+    }
+    .nav-right-list-social {
+        margin: 10px 0px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .content_card {
+      padding: 0;
+    }
+    .title-slider {
+        margin: 30px auto 30px;
+    }
+    .title-slider1{
+        font-size: 30px;
+    }
+    .recent-post, .feed{
+        height: 28rem;
+    }
+    .slider-buttons-prev {
+        padding: 15px;
+        width: 15px;
+    }
+    .slider-buttons-next {
+        padding: 15px;
+        width: 15px;
+    }
+    .nav-left-list{
+        flex-wrap: wrap;
+    }
+    .project-title{
+        font-size: 14px;
+    }
+}
