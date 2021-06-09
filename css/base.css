@@ -38,6 +38,7 @@ hr {
 }
 .header .container{
     overflow: hidden;
+    max-width: 1970px;
 }
 .container {
     max-width: 1170px;
@@ -61,12 +62,16 @@ hr {
 .logo {
     vertical-align: middle;
     transform: translateY(-7px);
+    margin-left: 5rem;
 }
 .name-logo {
     font-size: 22px;
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
+}
+.top-nav{
+    margin-right: 5rem;
 }
 .nav {
     display: flex;
@@ -125,6 +130,12 @@ hr {
     height: 20px;
 }
 /* ----------------slider-dark---------------- */
+#carouselId1 .indicator{
+    margin-top: 0rem !important;
+}
+.carousel-inner{
+    margin-bottom: 4rem;
+}
 .slidershow {
     position: relative;
     overflow: hidden;
@@ -138,11 +149,10 @@ hr {
     transition: all 0.7s;
     left: 100%;
     width: 100%;
-    
 }
 .icon-slider{
     position: relative;
-    margin: 5rem auto;
+    margin: 6rem auto;
     display: block;
 }
 .title-slider{
@@ -163,6 +173,7 @@ hr {
     text-align: center;
     font-size: 25px;
     font-weight: 300;
+    margin: 0 5rem 0 5rem;
 }
 .slider-dark .buttons {
     margin: 80px 0 60px;
@@ -215,7 +226,6 @@ hr {
     padding: 25px;
     width: 50px;
     transform: translateX(0px) translateY(-500px);
-    
 }
 .slider-buttons-next {
     float: right;
@@ -281,7 +291,7 @@ hr {
 .slider-buttons-prev:hover,.slider-buttons-next:hover {
     background-color: #00bcd4;
 }
-
+  
 /* ------------- title-light ----------- */
 .title {
     text-align: center;
@@ -461,7 +471,7 @@ hr {
     font-size: 100px;
     font-weight: 300;
     letter-spacing: 10px;
-    margin: 75px auto 85px;
+    margin: 0px auto 85px;
 }
 .slider-body {
     line-height: 37px;
@@ -720,7 +730,6 @@ hr {
 }
 .indicator{
     margin-top: 10rem !important;
-    margin-bottom: 3rem;
     text-align: center;
 }
 .slider-footer{

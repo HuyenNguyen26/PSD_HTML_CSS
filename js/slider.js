@@ -7,7 +7,7 @@ function myFunction() {
     x.className = "top-nav";
   }
 }
-/*//slider
+//slider
 var slideIndex = 0;
 show();
 
@@ -43,4 +43,3 @@ function showSlides(number, slide, dot) {
   slides[slideIndex - 1].style.display = "grid";
   dots[slideIndex - 1].className += " active";
 };
-*/
