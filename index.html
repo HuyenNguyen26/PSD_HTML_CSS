@@ -80,90 +80,82 @@
 
       <div class="container">
         <div class="row">
-          <img src="./images/menu.png" alt="" class="icon-slider" />
-          <div id="carouselId1" class="carousel slidershow" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="slider-dark">
-                  <div class="title-slider">
-                    <h1 class="title-slider1">
-                      <span class="title-slider2">Pricing</span> Tables
-                    </h1>
-                  </div>
-                  <p class="slider-dark-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea
-                  </p>
-                  <div class="buttons">
-                    <a href="#" class="btn">PURCHASE NOW</a>
-                    <a href="#" class="btn">MORE DETAILS</a><br />
-                  </div>
-                </div>
+          <div class="slidershow">
+            <div class="slider-dark fade">
+              <img src="./images/menu.png" alt="" class="icon-slider" />
+              <div class="title-slider">
+                <h1 class="title-slider1">
+                  <span class="title-slider2">Pricing</span> Tables
+                </h1>
               </div>
-              <div class="carousel-item">
-                <div class="slider-dark">
-                  <div class="title-slider">
-                    <h1 class="title-slider1">
-                      <span class="title-slider2">Pricing</span> Tables 1
-                    </h1>
-                  </div>
-                  <p class="slider-dark-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea
-                  </p>
-                  <div class="buttons">
-                    <a href="#" class="btn">PURCHASE NOW</a>
-                    <a href="#" class="btn">MORE DETAILS</a><br />
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="slider-dark">
-                  <div class="title-slider">
-                    <h1 class="title-slider1">
-                      <span class="title-slider2">Pricing</span> Tables 2
-                    </h1>
-                  </div>
-                  <p class="slider-dark-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea
-                  </p>
-                  <div class="buttons">
-                    <a href="#" class="btn">PURCHASE NOW</a>
-                    <a href="#" class="btn">MORE DETAILS</a><br />
-                  </div>
-                </div>
+              <p class="slider-dark-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn">PURCHASE NOW</a>
+                <a href="#" class="btn">MORE DETAILS</a><br />
               </div>
             </div>
-            <div class="indicator">
-              <ol class="carousel-indicators">
-                <div data-target="#carouselId1" data-slide-to="0" class="active dot ">
-                </div>
-                <div data-target="#carouselId1" data-slide-to="1" class=" dot ">
-                </div>
-                <div data-target="#carouselId" data-slide-to="2" class=" dot ">
-                </div>
-              </ol>
+            <div class="slider-dark fade">
+              <img src="./images/menu.png" alt="" class="icon-slider" />
+              <div class="title-slider">
+                <h1 class="title-slider1">
+                  <span class="title-slider2">Pricing</span> Tables 1
+                </h1>
+              </div>
+              <p class="slider-dark-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn">PURCHASE NOW</a>
+                <a href="#" class="btn">MORE DETAILS</a><br />
+              </div>
             </div>
-            <a class="carousel-control-prev " href="#carouselId1" role="button" data-slide="prev">
-              <div class="btn slider-buttons-prev ">
-                <div class="left"></div>
+            <div class="slider-dark fade">
+              <img src="./images/menu.png" alt="" class="icon-slider" />
+              <div class="title-slider">
+                <h1 class="title-slider1">
+                  <span class="title-slider2">Pricing</span> Tables 2
+                </h1>
               </div>
-            </a>
-            <a class="carousel-control-next" href="#carouselId1" role="button" data-slide="next">
-              <div class="btn slider-buttons-next ">
-                  <div class="right"></div>
+              <p class="slider-dark-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea
+              </p>
+              <div class="buttons">
+                <a href="#" class="btn">PURCHASE NOW</a>
+                <a href="#" class="btn">MORE DETAILS</a><br />
               </div>
-            </a>
+            </div>
           </div>
+          <div class="currentSlide">
+            <span class="dot" onclick="currentSlide(1,`slider-dark`,`dot`)"></span>
+            <span class="dot" onclick="currentSlide(2,`slider-dark`,`dot`)"></span>
+            <span class="dot" onclick="currentSlide(3,`slider-dark`,`dot`)"></span>
+          </div>
+          <div class="arrow">
+            <div class="btn slider-buttons-prev" onclick="plusSlides(-1,`slider-dark`,`dot`)">
+                <a href="#" >
+                    <div class="left"></div>
+                </a>
+            </div>
+            <div class="btn slider-buttons-next" onclick="plusSlides(1,`slider-dark`,`dot`)">
+                <a href="#" >
+                    <div class="right"></div>
+                </a>
+            </div>
+          </div> 
         </div>
-      </div>  
+      </div>
+       
     </header>
     <main class="middle">
       <div class="container">
@@ -489,49 +481,36 @@
                   Project / Client ?
                   <i class="caret-down-icon" aria-hidden="true"></i>
                 </h1>
-                <div id="carouselId2" class="carousel slider-footer" data-ride="carousel">
-                  <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                      <div class="flex-container">
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="flex-container">
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="flex-container">
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                        <div class="flex-flick"></div>
-                      </div>
-                    </div>
+                <div class="slider-footer">
+                  <div class="flex-container fade">
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
                   </div>
-                  <div class="indicator">
-                    <ol class="carousel-indicators round-footer">
-                      <div data-target="#carouselId2" data-slide-to="0" class="active dot-footer ">
-                      </div>
-                      <div data-target="#carouselId2" data-slide-to="1" class=" dot-footer ">
-                      </div>
-                      <div data-target="#carouselId2" data-slide-to="2" class=" dot-footer ">
-                      </div>
-                    </ol>
+                  <div class="flex-container fade">
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
                   </div>
+                  <div class="flex-container fade">
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                    <div class="flex-flick"></div>
+                  </div>
+                </div>
+                <div class="round-footer">
+                  <span class="dot-footer"></span>
+                  <span class="dot-footer"></span>
+                  <span class="dot-footer"></span>
                 </div>
               </div>
             </div>

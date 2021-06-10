@@ -130,12 +130,6 @@ hr {
     height: 20px;
 }
 /* ----------------slider-dark---------------- */
-#carouselId1 .indicator{
-    margin-top: 0rem !important;
-}
-.carousel-inner{
-    margin-bottom: 4rem;
-}
 .slidershow {
     position: relative;
     overflow: hidden;
@@ -197,7 +191,6 @@ hr {
 }
 .currentSlide {
     text-align: center;
-    margin: 0 0 50px;
     color: #2c2e3d;
 }
 .dot {
@@ -727,10 +720,6 @@ hr {
 .flex-flick:nth-child(3),
 .flex-flick:nth-child(5){
     background-color: #4b565d;
-}
-.indicator{
-    margin-top: 10rem !important;
-    text-align: center;
 }
 .slider-footer{
     position: relative;
